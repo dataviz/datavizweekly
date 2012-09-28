@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DataVis Weekly</title>
+  <link href="http://datavisweekly.com/archive.xml" rel="self"/>
+  <link href="http://datavisweekly.com/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://datavisweekly.com</id>
+  <author>
+    <name>Vitor Baptista</name>
+    <email>vitor@vitorbaptista.com</email>
+  </author>
+  {% for post in site.posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="http://datavisweekly.com{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://datavisweekly.com{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>
