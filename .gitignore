@@ -1,0 +1,5 @@
+vendor
+*.swp
+.rbenv-version
+.bundle
+_site
