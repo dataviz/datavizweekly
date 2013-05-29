@@ -3,11 +3,11 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>DataVis Weekly</title>
-  <link href="http://datavisweekly.com/archive.xml" rel="self"/>
-  <link href="http://datavisweekly.com/"/>
+  <title>DataViz Weekly</title>
+  <link href="http://datavizweekly.com/archive.xml" rel="self"/>
+  <link href="http://datavizweekly.com/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://datavisweekly.com</id>
+  <id>http://datavizweekly.com</id>
   <author>
     <name>Vitor Baptista</name>
     <email>vitor@vitorbaptista.com</email>
@@ -15,9 +15,9 @@ layout: nil
   {% for post in site.posts %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://datavisweekly.com{{ post.url }}"/>
+    <link href="http://datavizweekly.com{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://datavisweekly.com{{ post.id }}</id>
+    <id>http://datavizweekly.com{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}

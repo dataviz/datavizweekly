@@ -3,7 +3,6 @@ layout: default
 ---
 
 <img src="http://image-host.appspot.com/i/img?id=agppbWFnZS1ob3N0cg0LEgVJbWFnZRiJpAEM" alt="A sample of what the news letter looks like in Mutt"/>
-<script language="JavaScript" src="http://vitorbaptista.us5.list-manage2.com/subscriber-count?b=10&u=d86addb4-b3ed-4486-a2ee-49136545d28a&id=455c9e0443" type="text/javascript"></script>
 
 <!-- Begin MailChimp Signup Form -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
@@ -19,14 +18,13 @@ var mc_custom_error_style = '';
   <fieldset>
   
 <div class="mc-field-group">
-<label for="mce-EMAIL">Please provide your email address</label>
-<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your e-mail">
 </div>
     <div id="mce-responses">
       <div class="response" id="mce-error-response" style="display:none"></div>
       <div class="response" id="mce-success-response" style="display:none"></div>
     </div>
-    <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+    <div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
   </fieldset> 
 </form>
 </div>
